@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="110"
+    android:viewportHeight="110">
+
+    <!-- Горизонтальная часть "шапки" -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M10,10 L90,10 L90,40 L10,40 Z" />
+
+    <!-- Наклонная ножка -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M30,40 L60,40 L35,95 L10,95 Z" />
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M90,10 L90,70 L100,70 L100,10  Z" />
+</vector>

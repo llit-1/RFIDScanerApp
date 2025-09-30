@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="holo_red_dark">#e0681b</color>
+    <color name="primary">#f47920</color>
+    <color name="primaryContainer">#e0681b</color> <!-- темнее нажатие -->
+    <color name="onPrimary">#FFFFFF</color> <!-- белый текст на кнопке/шапке -->
+    <color name="red">#FFFF0000</color> <!-- белый текст на кнопке/шапке -->
+</resources>

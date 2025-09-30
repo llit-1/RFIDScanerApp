@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="#DDDDDD">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Obj (сверху слева) -->
+        <TextView
+            android:id="@+id/textObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="obj"
+            android:textSize="10sp"
+            android:textColor="#888888" />
+
+        <!-- Holder (вверху справа) -->
+        <TextView
+            android:id="@+id/textHolder"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/textObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Владелец"
+            android:textSize="12sp"
+            android:textColor="#000000" />
+
+        <!-- Category (снизу под Obj) -->
+        <TextView
+            android:id="@+id/textCategory"
+            android:layout_below="@id/textObj"
+            android:layout_alignStart="@id/textObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Категория"
+            android:textSize="12sp"
+            android:textColor="#888888" />
+
+        <!-- ObjectName (под Category, полужирным) -->
+        <TextView
+            android:id="@+id/textName"
+            android:layout_below="@id/textCategory"
+            android:layout_alignStart="@id/textObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название объекта"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <!-- Location (в правом нижнем углу, красным цветом) -->
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Локация"
+            android:textSize="12sp"
+            android:textColor="#FF0000"
+            app:itemTextAppearance="@style/NavigationViewMenuText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

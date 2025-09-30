@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="#DDDDDD">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Obj -->
+        <TextView
+            android:id="@+id/textObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="obj"
+            android:textSize="10sp"
+            android:textColor="#888888" />
+
+        <!-- Holder (top right) -->
+        <TextView
+            android:id="@+id/textHolder"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Владелец"
+            android:textSize="12sp" />
+
+        <!-- Category (below Obj) -->
+        <TextView
+            android:id="@+id/textCategory"
+            android:layout_below="@id/textObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Категория"
+            android:textSize="12sp"
+            android:textColor="#888888" />
+
+        <!-- ObjectName (below Category) -->
+        <TextView
+            android:id="@+id/textObjectName"
+            android:layout_below="@id/textCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название объекта"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Checkmark (bottom right) -->
+        <ImageView
+            android:id="@+id/imageCheck"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_check"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
